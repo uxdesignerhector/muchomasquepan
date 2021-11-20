@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- nav ocupa todo el ancho de la pagina -->
+    <nav class="nav">
+        <!-- aplicamos el main container dentro del nav para ajustar y centrar bien el menu -->
+        <div class="main-container">
+            <div class="logo-container">
+                <img class="logo-container__img" src="../assets/img/logo.png" alt="">
+            </div>
+            <p class="logo-texto">Mucho más que pan</p>
+            <ul class="main-nav">
+                <li class="main-nav__list"><a class="main-nav__link" href="../index.html">Inicio</a></li>
+                <li class="main-nav__list"><a class="main-nav__link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li class="main-nav__list"><a class="main-nav__link" href="micesta.html">Mi cesta</a></li>
+                <li class="main-nav__list"><a class="main-nav__link" href="login.html">Login</a></li>
+                <li class="main-nav__list"><a class="main-nav__link" href="comentarios.html">Comentarios</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-container">
+        <main>
+            <section>
+                <article>
+                    <header>
+                        <h2 class="section-title">Accede a tu cuenta</h2>
+                    </header>
+                    <form class="form" action="#" method="post">
+                        <div class="form__input-label-container">
+                            <label class="form__label" for="user">Usuario:*</label>
+                            <input id="user" type="text" name="user" maxlength="20" required>
+                        </div>
+                        <div class="form__input-label-container">
+                            <label class="form__label" for="Password">Password:*</label>
+                            <input type="password" name="last_name" minlength="8" required>
+                        </div>
+                        <div class="form__input-label-container">
+                            <input class="button button--product-card" type="submit" value="Acceder" name="subscribe">
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section>
+
+                <article>
+                    <header>
+                        <h2 class="section-title">Apuntate a los talleres</h2>
+                    </header>
+
+                    <table class="table">
+                        <!-- caption oculto por css -->
+                        <caption class="table__caption">Talleres disponibles</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Dias</th>
+                                <th>Participantes</th>
+                                <th>Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="table__row">
+                                <th>Panaderia</th>
+                                <td>Lunes y martes</td>
+                                <td>10 max</td>
+                                <td>25€</td>
+
+                            </tr>
+                            <tr class="table__row">
+                                <th>Pasteleria</th>
+                                <td>Viernes</td>
+                                <td>8 max</td>
+                                <td>22€</td>
+                            </tr>
+                            <tr class="table__row">
+                                <th>Glaseados</th>
+                                <td>Miércoles y jueves</td>
+                                <td>15 max</td>
+                                <td>20€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                    <form class="form" action="#" method="post">
+
+                        <div class="form__input-label-container">
+                            <label class="form__label" for="fullname">Nombre completo:*</label>
+                            <input type="text" name="fullname" maxlength="60" required>
+                        </div>
+                        <div class="form__input-label-container">
+                            <label class="form__label" for="mail">Mail:*</label>
+                            <input type="email" name="mail" required>
+                        </div>
+                        <div class="form__input-label-container">
+                            <label class="form__label" for="tel">Teléfono:*</label>
+                            <input type="tel" name="tel" id="tel" required pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+                                maxlength="9" minlength="9">
+                        </div>
+                        <div class="form__input-label-container">
+                            <label class="form__label" for="type">Elige un taller:</label>
+                            <select required class="form__select" name="type" id="type">
+                                <option value="basic">Panaderia</option>
+                                <option value="medium" selected>Pasteleria</option>
+                                <option value="hihg">Glaseados</option>
+                            </select>
+                        </div>
+                        <div class="form__input-label-container">
+                            <label class="form__label" for="date">Fecha</label>
+                            <input id="date" name="date" type="date" required>
+                        </div>
+
+                        <div class="form__input-label-container">
+                            <input class="button button--product-card" type="submit" value="Apuntarse" name="subscribe">
+                        </div>
+                    </form>
+                </article>
+            </section>
+
+
+            <section>
+
+                <!-- Es el resumen de todos los productos con el precio y da acceso al checkout -->
+
+
+
+            </section>
+
+
+        </main>
+    </div>
+
+    <!-- Footer principal fuera del contenedor principal para que ocupe todo el ancho -->
+    <footer class="main-footer">
+        <!-- Aplicamos el contenedor principal para controlar el ancho del contenido -->
+        <div class="main-container">
+            <div class="main-footer__col">
+                <h2 class="main-footer__h2">Contactanos</h2>
+                <ul class="main-footer__block">
+                    <li class="main-footer__list"><a class="main-footer__link" href="tel:+34 6666666">+34 6666666</a>
+                    </li>
+                    <li class="main-footer__list"><a class="main-footer__link"
+                            href="mailto:correfalso@mail.com">correofalso@mail.com</a></li>
+                    <li class="main-footer__list"><a class="main-footer__link" href="#" target="_blank">Privacy</a></li>
+                    <li class="main-footer__list">Location: Madrid, 20 campoamor</li>
+                </ul>
+            </div>
+            <div class="main-footer__col">
+                <h2 class="main-footer__h2">Sitemap</h2>
+                <ul class="main-footer__block">
+                    <li class="main-footer__list"><a class="main-footer__link" href="../index.html">Inicio</a></li>
+                    <li class="main-footer__list"><a class="main-footer__link" href="sobre-nosotros.html">Sobre
+                            nosotros</a>
+                    </li>
+                    <li class="main-footer__list"><a class="main-footer__link" href="micesta.html">Mi cesta</a>
+                    </li>
+                    <li class="main-footer__list"><a class="main-footer__link" href="login.html">Login</a></li>
+                    <li class="main-footer__list"><a class="main-footer__link" href="comentarios.html">Comentarios</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="main-footer__col">
+                <h2 class="main-footer__h2">Redes sociales</h2>
+                <ul class="main-footer__block">
+                    <li class="main-footer__list"><a class="main-footer__link" href="#">facebook</a></li>
+                    <li class="main-footer__list"><a class="main-footer__link" href="#">Twitter</a></li>
+                    <li class="main-footer__list"><a class="main-footer__link" href="#">Instagram</a></li>
+                    <li class="main-footer__list"><a class="main-footer__link" href="#">TikTok</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+/* clase muy importante retiene los elementos cuando la pagina crece a lo ancho */
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #fff0d1;
+    opacity: 1;
+    background-image: radial-gradient(#e5b851 1.7000000000000002px, transparent 1.7000000000000002px), radial-gradient(#e5b851 1.7000000000000002px, #fff0d1 1.7000000000000002px);
+    background-size: 68px 68px;
+    background-position: 0 0, 34px 34px;
+
+}
+
+
+.nav {
+    background-color: wheat;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: rgb(108, 62, 11)1px 0px 10px;
+}
+
+.main-nav__list {
+    display: inline-block;
+}
+
+.logo-container,
+.main-nav,
+.logo-texto,
+.logo-container__img {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo-texto {
+    font-family: 'Pacifico', cursive;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.logo-container {
+    height: 100px;
+}
+
+.logo-container__img {
+    height: 70%;
+
+}
+
+.main-nav {
+    padding-left: 250px;
+}
+
+.main-nav__list {
+    list-style: none;
+    vertical-align: middle;
+}
+
+.main-nav__link {
+    padding: 10px;
+    text-decoration: none;
+    color: darkred;
+}
+
+/* Centramos la seccion de productos, sino queda feo */
+.products {
+    text-align: center;
+
+}
+
+
+.product-card {
+    max-width: 200px;
+    padding: 20px;
+    background-color: rgb(255, 252, 247);
+    margin: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    background: radial-gradient(circle, rgb(235, 154, 120) 0%, rgb(69, 29, 0) 84%);
+    box-shadow: rgb(108, 62, 11) 2px 2px 10px;
+    border-radius: 43px;
+}
+
+.product-card:hover {
+    background-color: rgb(255, 246, 231);
+}
+
+/* Saturamos el color de la imagen para que el producto parezca más apetecible*/
+.product-card:hover .product-card__img {
+    filter: saturate(120%);
+}
+
+.product-card__title {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: #f2e1b8 2px solid;
+    color: white;
+}
+
+
+.product-card__img-container {
+    height: 150px;
+}
+
+.product-card__description {
+    font-size: 1.1rem;
+    padding: 5px;
+    border-top: #f2e1b8 2px solid;
+    ;
+    border-bottom: #f2e1b8 2px solid;
+}
+
+
+.product-card__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.product-card__footer {
+    text-align: center;
+}
+
+
+.product-card__input {
+    width: 3rem;
+}
+
+.product-card__price{
+    color: white;
+    font-size:1.3em;
+}
+
+.product-card__quantity{
+    color: white;
+}
+
+
+/* ---------------- */
+
+.main-header {
+    position: relative;
+    height: 500px;
+}
+
+.main-header__background-video {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    object-fit: fill;
+}
+
+
+.main-header__encima {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    text-align: center;
+}
+
+.main-header__title-h1 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    text-shadow: rgb(108, 62, 11) 2px 2px 8px;
+}
+
+/* ---------------botones */
+
+.button {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+.button--product-card {
+    background-color: rgb(194, 120, 59);
+    color: rgb(51, 9, 8);
+    margin-top: 20px;
+}
+
+.button--eliminar {
+    background-color: rgb(194, 59, 59);
+    color: white;
+}
+
+.button--comprar {
+    background-color: rgb(83, 173, 83);
+    color: white;
+}
+
+
+.button:hover {
+    box-shadow: rgb(108, 62, 11) 2px 2px 10px;
+}
+
+/* ------------------------------- */
+.horizontal-block {
+    text-align: right;
+    border-radius: 20px;
+    padding: 40px;
+    min-height: 150px;
+    background-size: cover;
+    box-shadow: rgb(108, 62, 11) 2px 2px 10px;
+    margin: 40px 0;
+}
+
+
+
+
+.horizontal-block--fondo-pasteles {
+    background: url(../assets/img/pasteles.jpg);
+}
+
+.horizontal-block--fondo-tartas {
+    background: url(../assets/img/tartas.jpg);
+    background-position-y: -60px;
+}
+
+.horizontal-block--fondo-mermeladas {
+    background: url(../assets/img/mermeladas.jpg);
+    background-position-y: -60px;
+}
+
+.horizontal-block__subtitle,
+.horizontal-block__title {
+    margin: 5px 0;
+    color: white;
+    text-shadow: rgb(108, 62, 11) 2px 2px 8px;
+}
+
+.horizontal-block__title {
+    font-size: 3rem;
+}
+
+.horizontal-block__subtitle {
+    font-size: 2rem;
+}
+
+.horizontal-block:nth-child(2n+1) {
+    text-align: left;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+}
+
+
+section {
+    margin: 100px 0;
+}
+
+
+
+.img-container {
+    width: 450px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img-container__img {
+    width: 100%;
+}
+
+
+.article-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 30px;
+}
+
+.article-with-img {
+    margin-bottom: 40px;
+}
+
+
+/* cesta */
+
+/* alineamos cesta y cesta resumen */
+.cesta,
+.cesta-resumen,
+.cesta-articulo__nombre {
+    display: inline-block;
+}
+
+.cesta {
+    width: 65%;
+}
+
+
+
+.cesta-articulo,
+.cesta-resumen,
+.comentario {
+    padding: 20px;
+    /* Damos un fondo para evitar confusion en los decimales cuando se superponen al fondo del body */
+    background-color: wheat;
+    box-shadow: rgb(108, 62, 11) 2px 2px 10px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.cesta-resumen {
+    width: 30%;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+
+/* Cualquier elemento que este dentro de la cesta articulo se muestra en linea */
+.cesta-articulo>* {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* Importante, si no damos un width a cesta-articulo__header el precio no se alineara co */
+.cesta-articulo__header {
+    width: 300px;
+}
+
+.cesta-articulo__nombre {
+    padding-left: 20px;
+}
+
+.cesta-articulo__img-container {
+    width: 50px;
+    height: 50px;
+}
+
+.cesta-articulo__img {
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+.cesta-articulo__precio-container {
+    padding-left: 200px;
+    text-align: right;
+}
+
+.cesta-articulo__precio-text {
+    font-size: 1.2rem;
+}
+
+.cesta-resumen__texto,
+.cesta-resumen__precio {
+    display: inline-block;
+}
+
+.cesta-resumen__texto {
+    width: 150px;
+}
+
+.cesta-resumen__precio {
+    margin-left: 20%;
+}
+
+
+.comentarios {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.comentario {
+    display: inline-block;
+    width: 270px;
+    position: relative;
+    padding-top: 90px;
+    margin: 70px 10px 10px 10px;
+}
+
+.comentario__img-container {
+    margin: 0 auto;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -60px;
+}
+
+.comentario__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-left: -100%;
+    box-shadow: rgb(108, 62, 11) 2px 2px 10px;
+}
+
+
+.comentario__nombre,
+.comentario__text {
+    text-align: center;
+}
+
+.comentario__nombre {
+    font-size: 1.2em;
+}
+
+
+.iframe-video {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.form {
+    padding: 20px;
+    background-color: wheat;
+    box-shadow: rgb(108, 62, 11) 2px 2px 10px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 300px;
+
+}
+
+
+.form__input-label-container {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: max-content;
+}
+
+.form__input-label-container>* {
+    display: block;
+}
+
+.form__label {
+    font-size: 1.2em;
+}
+
+
+
+.table {
+    font-size: 1.2em;
+    background-color: #f8e5ac;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+
+}
+
+.table tr>* {
+    padding: 10px;
+}
+
+.table__caption {
+    display: none;
+}
+
+
+.table__row:hover {
+    background-color: #ffcd37;
+}

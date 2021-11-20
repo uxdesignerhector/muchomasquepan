@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hector Herradura inicio</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+</head>
+
+<body>
+  <!-- nav ocupa todo el ancho de la pagina -->
+  <nav class="nav">
+    <!-- aplicamos el main container dentro del nav para ajustar y centrar bien el menu -->
+    <div class="main-container">
+      <div class="logo-container">
+        <img class="logo-container__img" src="assets/img/logo.png" alt="">
+      </div>
+      <p class="logo-texto">Mucho más que pan</p>
+      <ul class="main-nav">
+        <li class="main-nav__list"><a class="main-nav__link" href="index.html">Inicio</a></li>
+        <li class="main-nav__list"><a class="main-nav__link" href="pages/sobre-nosotros.html">Sobre nosotros</a></li>
+        <li class="main-nav__list"><a class="main-nav__link" href="pages/micesta.html">Mi cesta</a></li>
+        <li class="main-nav__list"><a class="main-nav__link" href="pages/login.html">Login</a></li>
+        <li class="main-nav__list"><a class="main-nav__link" href="pages/comentarios.html">Comentarios</a></li>
+      </ul>
+    </div>
+  </nav>
+    <header class="main-header">
+      <div class="main-header__video-container">
+        <video class="main-header__background-video" muted loop autoplay src="assets/video/bakery.mp4"></video>
+      </div>
+      <div class="main-header__encima">
+        <h1 class="main-header__title-h1">Mucho más<br>que pan</h1>
+      </div>
+    </header>
+  <div class="main-container">
+
+
+
+    <main>
+
+      <!-- Seccion principal para la venta de pan -->
+      <!-- Hay que vigilar que el elemento de descripcion tenga dos lineas como máximo si no se descoloca, elegir bien las palabras -->
+      <section class="products">
+        <header>
+          <h2 class="section-title">Tienda</h2>
+        </header>
+        <article class="product-card">
+          <header class="product-card__header">
+            <h2 class="product-card__title">
+              Pica-Toste
+            </h2>
+          </header>
+          <div class="product-card__body">
+            <div class="product-card__img-container">
+              <img src="assets/img/pan.jpg" alt="" class="product-card__img">
+            </div>
+            <p class="product-card__description">Pan tostado especialmente para picatostes en el puré</p>
+          </div>
+          <footer class="product-card__footer">
+            
+              <p class="product-card__price">3.99€</p>
+            
+            <div class="product-card__quantity">
+              <!-- esto deberia ser un pseudo formulario con javasript -->
+              <label for="quaintity">Unidades</label>
+              <input class="product-card__input" type="number" min="0">
+            </div>
+
+            <button class="button button--product-card">
+              Añadir
+            </button>
+          </footer>
+        </article>
+        <article class="product-card">
+          <header class="product-card__header">
+            <h2 class="product-card__title">
+              El Himalaya
+            </h2>
+          </header>
+          <div class="product-card__body">
+            <div class="product-card__img-container">
+              <img src="assets/img/pan2.jpg" alt="" class="product-card__img">
+            </div>
+            <p class="product-card__description">Harina y trigo traidos directamente de Asia</p>
+          </div>
+          <footer class="product-card__footer">
+            
+              <p class="product-card__price">2.50€</p>
+            
+            <div class="product-card__quantity">
+              <!-- esto deberia ser un pseudo formulario con javasript -->
+              <label for="quaintity">Unidades</label>
+              <input class="product-card__input" type="number" min="0">
+            </div>
+
+            <button class="button button--product-card">
+              Añadir
+            </button>
+          </footer>
+        </article>
+        <article class="product-card">
+          <header class="product-card__header">
+            <h2 class="product-card__title">
+              Croissant Real
+            </h2>
+          </header>
+          <div class="product-card__body">
+            <div class="product-card__img-container">
+              <img src="assets/img/pan3.jpg" alt="" class="product-card__img">
+            </div>
+            <p class="product-card__description">El Croissant más pedido de nuestra casa</p>
+          </div>
+          <footer class="product-card__footer">
+            
+              <p class="product-card__price">0.99€</p>
+            
+            <div class="product-card__quantity">
+              <!-- esto deberia ser un pseudo formulario con javasript -->
+              <label for="quaintity">Unidades</label>
+              <input class="product-card__input" type="number" min="0">
+            </div>
+
+            <button class="button button--product-card">
+              Añadir
+            </button>
+          </footer>
+        </article>
+        <article class="product-card">
+          <header class="product-card__header">
+            <h2 class="product-card__title">
+              Pande-Todo
+            </h2>
+          </header>
+          <div class="product-card__body">
+            <div class="product-card__img-container">
+              <img src="assets/img/pan4.jpg" alt="" class="product-card__img">
+            </div>
+            <p class="product-card__description">Pan de molde con ligeros toques tostados</p>
+          </div>
+          <footer class="product-card__footer">
+            
+              <p class="product-card__price">2.45€</p>
+            
+            <div class="product-card__quantity">
+              <!-- esto deberia ser un pseudo formulario con javasript -->
+              <label for="quaintity">Unidades</label>
+              <input class="product-card__input" type="number" min="0">
+            </div>
+
+            <button class="button button--product-card">
+              Añadir
+            </button>
+          </footer>
+        </article>
+        <article class="product-card">
+          <header class="product-card__header">
+            <h2 class="product-card__title">
+              Kangreburguer
+            </h2>
+          </header>
+          <div class="product-card__body">
+            <div class="product-card__img-container">
+              <img src="assets/img/pan6.jpg" alt="" class="product-card__img">
+            </div>
+            <p class="product-card__description">Hecha con aromas a crustaceo crujiente</p>
+          </div>
+          <footer class="product-card__footer">
+            
+              <p class="product-card__price">2.99€</p>
+            
+            <div class="product-card__quantity">
+              <!-- esto deberia ser un pseudo formulario con javasript -->
+              <label for="quaintity">Unidades</label>
+              <input class="product-card__input" type="number" min="0">
+            </div>
+
+            <button class="button button--product-card">
+              Añadir
+            </button>
+          </footer>
+        </article>
+        <article class="product-card">
+          <header class="product-card__header">
+            <h2 class="product-card__title">
+              La Rust-ica
+            </h2>
+          </header>
+          <div class="product-card__body">
+            <div class="product-card__img-container">
+              <img src="assets/img/pan5.jpg" alt="" class="product-card__img">
+            </div>
+            <p class="product-card__description">Hecho a fuego lento en sarten de hierro</p>
+          </div>
+          <footer class="product-card__footer">
+            
+              <p class="product-card__price">4.35€</p>
+            
+            <div class="product-card__quantity">
+              <!-- esto deberia ser un pseudo formulario con javasript -->
+              <label for="quaintity">Unidades</label>
+              <input class="product-card__input" type="number" min="0">
+            </div>
+
+            <button class="button button--product-card">
+              Añadir
+            </button>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <header>
+          <h2 class="section-title">Descubre nuestros otros productos</h2>
+        </header>
+        
+        <article class="horizontal-block horizontal-block--fondo-pasteles" >
+          <header>
+            <h2 class="horizontal-block__title">
+              Nuestros pasteles
+            </h2>
+          </header>
+          <p class="horizontal-block__subtitle">
+            En una palabra, pasteliciosos
+          </p>
+        </article>
+        <article class="horizontal-block horizontal-block--fondo-mermeladas" >
+          <header>
+            <h2 class="horizontal-block__title">
+              Nuestras mermeladas
+            </h2>
+          </header>
+          <p class="horizontal-block__subtitle">
+            Para chuparse los dedos
+          </p>
+        </article>
+        <article class="horizontal-block horizontal-block--fondo-tartas" >
+          <header>
+            <h2 class="horizontal-block__title">
+              Nuestras tartas
+            </h2>
+          </header>
+          <p class="horizontal-block__subtitle">
+            Una delicia tras otra
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer principal fuera del contenedor principal para que ocupe todo el ancho -->
+  <footer class="main-footer">
+    <!-- Aplicamos el contenedor principal para controlar el ancho del contenido -->
+    <div class="main-container">
+      <div class="main-footer__col">
+        <h2 class="main-footer__h2">Contactanos</h2>
+        <ul class="main-footer__block">
+          <li class="main-footer__list"><a class="main-footer__link" href="tel:+34 6666666">+34 6666666</a></li>
+          <li class="main-footer__list"><a class="main-footer__link"
+              href="mailto:correfalso@mail.com">correofalso@mail.com</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="#" target="_blank">Privacy</a></li>
+          <li class="main-footer__list">Location: Madrid, 20 campoamor</li>
+        </ul>
+      </div>
+      <div class="main-footer__col">
+        <h2 class="main-footer__h2">Sitemap</h2>
+        <ul class="main-footer__block">
+          <li class="main-footer__list"><a class="main-footer__link" href="index.html">Inicio</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="pages/sobre-nosotros.html">Sobre nosotros</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="pages/micesta.html">Mi cesta</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="pages/login.html">Login</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="pages/comentarios.html">Comentarios</a></li>
+
+        </ul>
+      </div>
+      <div class="main-footer__col">
+        <h2 class="main-footer__h2">Redes sociales</h2>
+        <ul class="main-footer__block">
+          <li class="main-footer__list"><a class="main-footer__link" href="#">facebook</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="#">Twitter</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="#">Instagram</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="#">TikTok</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

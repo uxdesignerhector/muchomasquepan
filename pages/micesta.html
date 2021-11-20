@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi cesta</title>
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/png">
+</head>
+
+<body>
+  <!-- nav ocupa todo el ancho de la pagina -->
+  <nav class="nav">
+    <!-- aplicamos el main container dentro del nav para ajustar y centrar bien el menu -->
+    <div class="main-container">
+      <div class="logo-container">
+        <img class="logo-container__img" src="../assets/img/logo.png" alt="">
+      </div>
+      <p class="logo-texto">Mucho más que pan</p>
+      <ul class="main-nav">
+        <li class="main-nav__list"><a class="main-nav__link" href="../index.html">Inicio</a></li>
+        <li class="main-nav__list"><a class="main-nav__link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+        <li class="main-nav__list"><a class="main-nav__link" href="micesta.html">Mi cesta</a></li>
+        <li class="main-nav__list"><a class="main-nav__link" href="login.html">Login</a></li>
+        <li class="main-nav__list"><a class="main-nav__link" href="comentarios.html">Comentarios</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main-container">
+    <main>
+
+      <section>
+        <header>
+          <h2 class="section-title">Mi cesta</h2>
+        </header>
+        <!-- Muestra los articulos que el cliente ha seleccionado uno por uno -->
+        <div class="cesta">
+          <article class="cesta-articulo">
+            <div class="cesta-articulo__img-container">
+              <img class="cesta-articulo__img" src="../assets/img/pan.jpg">
+            </div>
+            <header class="cesta-articulo__header">
+              <h3 class="cesta-articulo__nombre">Pica-Toste</h3>
+              <span class="cesta-articulo__unidades">4<abbr title="Unidades">.Uds</abbr></span>
+            </header>
+            <div class="cesta-articulo__precio-container">
+              <p class="cesta-articulo__precio-text">6.35$</p>
+              <button class="button button--eliminar">Eliminar</button>
+            </div>
+          </article>
+          <article class="cesta-articulo">
+            <div class="cesta-articulo__img-container">
+              <img class="cesta-articulo__img" src="../assets/img/pan5.jpg">
+            </div>
+            <header class="cesta-articulo__header">
+              <h3 class="cesta-articulo__nombre">Rust-ico</h3>
+              <span class="cesta-articulo__unidades">6<abbr title="Unidades">.Uds</abbr></span>
+            </header>
+            <div class="cesta-articulo__precio-container">
+              <p class="cesta-articulo__precio-text">9.65$</p>
+              <button class="button button--eliminar">Eliminar</button>
+            </div>
+          </article>
+          <article class="cesta-articulo">
+            <div class="cesta-articulo__img-container">
+              <img class="cesta-articulo__img" src="../assets/img/pan6.jpg">
+            </div>
+            <header class="cesta-articulo__header">
+              <h3 class="cesta-articulo__nombre">Kangreburguer</h3>
+              <span class="cesta-articulo__unidades">6<abbr title="Unidades">.Uds</abbr></span>
+            </header>
+            <div class="cesta-articulo__precio-container">
+              <p class="cesta-articulo__precio-text">20.65$</p>
+              <button class="button button--eliminar">Eliminar</button>
+            </div>
+          </article>
+        </div>
+        <!-- Es el resumen de todos los productos con el precio y da acceso al checkout -->
+
+
+
+        <div class="cesta-resumen">
+          <article>
+            <header>
+              <h2 class="section-title section-title--cesta">Resumen</h2>
+            </header>
+            <p><span class="cesta-resumen__texto">Pica-Toste 4.Uds</span><span
+                class="cesta-resumen__precio">6.35$</span></p>
+            <p> <span class="cesta-resumen__texto">Rust-ico 6.Uds</span><span class="cesta-resumen__precio">9.65$</span>
+            </p>
+            <p> <span class="cesta-resumen__texto">Pica-Toste 4.Uds</span><span
+                class="cesta-resumen__precio">6.35$</span></p>
+            <hr>
+            <p>Total: 25$ + envio incluido</p>
+            <button class="button button--comprar">Comprar</button>
+          </article>
+        </div>
+
+      </section>
+
+
+    </main>
+  </div>
+
+  <!-- Footer principal fuera del contenedor principal para que ocupe todo el ancho -->
+  <footer class="main-footer">
+    <!-- Aplicamos el contenedor principal para controlar el ancho del contenido -->
+    <div class="main-container">
+      <div class="main-footer__col">
+        <h2 class="main-footer__h2">Contactanos</h2>
+        <ul class="main-footer__block">
+          <li class="main-footer__list"><a class="main-footer__link" href="tel:+34 6666666">+34 6666666</a></li>
+          <li class="main-footer__list"><a class="main-footer__link"
+              href="mailto:correfalso@mail.com">correofalso@mail.com</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="#" target="_blank">Privacy</a></li>
+          <li class="main-footer__list">Location: Madrid, 20 campoamor</li>
+        </ul>
+      </div>
+      <div class="main-footer__col">
+        <h2 class="main-footer__h2">Sitemap</h2>
+        <ul class="main-footer__block">
+          <li class="main-footer__list"><a class="main-footer__link" href="../index.html">Inicio</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="sobre-nosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="main-footer__list"><a class="main-footer__link" href="micesta.html">Mi cesta</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="login.html">Login</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="comentarios.html">Comentarios</a></li>
+        </ul>
+      </div>
+      <div class="main-footer__col">
+        <h2 class="main-footer__h2">Redes sociales</h2>
+        <ul class="main-footer__block">
+          <li class="main-footer__list"><a class="main-footer__link" href="#">facebook</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="#">Twitter</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="#">Instagram</a></li>
+          <li class="main-footer__list"><a class="main-footer__link" href="#">TikTok</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

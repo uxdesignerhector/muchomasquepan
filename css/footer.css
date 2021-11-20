@@ -1,0 +1,37 @@
+.main-footer {
+    margin-top: 100px;
+    background: rgb(96,60,33);
+    background: linear-gradient(0deg, rgba(96,60,33,1) 0%, rgba(113,70,37,1) 49%, rgba(129,95,45,1) 100%);
+    
+    padding: 30px 0;
+}
+
+
+.main-footer__block,
+.main-footer__link,
+.main-footer__h2 {
+    color: #ffe6b7;
+}
+
+.main-footer__col {
+    display: inline-block;
+    min-width: 33%;
+    vertical-align: top;
+}
+
+.main-footer__h2,
+.main-footer__list {
+    text-align: left;
+}
+
+.main-footer__block {
+    padding: 0;
+}
+
+.main-footer__list {
+    list-style: none;
+}
+
+.main-footer__link {
+    text-decoration: none;
+}
